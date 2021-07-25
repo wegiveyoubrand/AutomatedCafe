@@ -264,6 +264,10 @@ custom-card:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .modal-close {
@@ -293,6 +297,13 @@ form-container {
   border-radius: 20px;
   width: 100%;
   max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 form-container form {
@@ -324,6 +335,11 @@ form-container form input {
 
 form-container form button {
   float: right;
+}
+
+form-container a {
+  font-size: 12px;
+  text-decoration: underline;
 }
 
 #letters main {
