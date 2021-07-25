@@ -112,44 +112,6 @@ footer > div.active span {
 }
 
 /* Custom Styling */
-.banner {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  background-color: #fff;
-}
-
-.banner-component {
-  position: relative;
-  padding: 40px 5%;
-  font-size: 0.9rem;
-  -webkit-box-shadow: 0 0 3px rgba(12, 12, 70, 0.999);
-          box-shadow: 0 0 3px rgba(12, 12, 70, 0.999);
-}
-
-.banner-close {
-  position: absolute;
-  top: 20px;
-  right: 5%;
-  font-size: 2rem;
-  color: #da2e0b;
-  cursor: pointer;
-}
-
-.banner.close {
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
-  -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
-}
-
-.banner .button {
-  background-color: rgba(12, 12, 70, 0.999);
-  color: #fff;
-}
-
 .cards {
   position: relative;
   width: 100%;
@@ -233,6 +195,135 @@ custom-card {
 custom-card:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.banner-component {
+  position: relative;
+  padding: 40px 5%;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0 0 3px rgba(12, 12, 70, 0.999);
+          box-shadow: 0 0 3px rgba(12, 12, 70, 0.999);
+}
+
+.banner-close {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  font-size: 2rem;
+  color: #da2e0b;
+  cursor: pointer;
+}
+
+.banner.close {
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.banner .button {
+  background-color: rgba(12, 12, 70, 0.999);
+  color: #fff;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.707);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+
+.modal-component {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 40px 5%;
+  font-size: 0.9rem;
+  -webkit-box-shadow: 0 0 3px rgba(12, 12, 70, 0.999);
+          box-shadow: 0 0 3px rgba(12, 12, 70, 0.999);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.modal-close {
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  font-size: 2rem;
+  color: #da2e0b;
+  cursor: pointer;
+}
+
+.modal.close {
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.modal .button {
+  background-color: rgba(12, 12, 70, 0.999);
+  color: #fff;
+}
+
+form-container {
+  background-color: rgba(252, 252, 252, 0.999);
+  padding: 20px 5%;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+form-container form {
+  width: 100%;
+}
+
+form-container form .form-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+form-container form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form-container form input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  outline: none;
+  border: 1px dotted rgba(9, 19, 78, 0.999);
+}
+
+form-container form button {
+  float: right;
 }
 
 #letters main {
