@@ -11,6 +11,7 @@
   <style>
     @media print {
       button,
+      .button,
       nav {
         display: none;
       }
@@ -29,10 +30,10 @@
         <div class="letter">
           <div class="sender">
             <div class="address">
-              <p>23, Sender Street,</p>
-              <p>Sender Bus-stop</p>
-              <p>Sender Location</p>
-              <p>Sender State</p>
+              <p contenteditable="true">23, Sender Street,</p>
+              <p contenteditable="true">Sender Bus-stop</p>
+              <p contenteditable="true">Sender Location</p>
+              <p contenteditable="true">Sender State</p>
             </div>
             <div class="date"><p>23rd July, 2021</p></div>
           </div>
@@ -49,15 +50,20 @@
           <div class="salutation">Dear Sir / Ma</div>
           <div class="letter-title">LETTER OF UNDERTAKING</div>
           <div class="letter-paragraphs">
-            <div class="paragraph-1">
+            <div class="paragraph paragraph-1">
               <p>
-                My name is Alyson Osborn a new employee in the dispatch
-                department with Kevian Industries. I hereby write this letter to
-                bring to your kind attention that I have not received my salary
-                for the past two months.
+                My name is
+                <span contenteditable="true" class="sender-name"
+                  >Alyson Osborn</span
+                >
+                a new student with the JAMB Reg Number:
+                <span contenteditable="true">2345678PA</span> in the dispatch
+                department of the University of Nigeria, Nsukka. I hereby write
+                this letter to bring to your kind attention that I have not
+                received my salary for the past two months.
               </p>
             </div>
-            <div class="paragraph-2">
+            <div class="paragraph paragraph-2">
               <p>
                 I started working in your company on 1st September 2019 and I
                 was put on probation for three months. I wish to request for my
@@ -73,9 +79,13 @@
           <div class="signature">
             <div class="closing"></div>
             <div class="sender">
-              <div class="complementary-close">Your Faithfully</div>
-              <div class="name"><p>Jessica Agnes</p></div>
-              <div class="Call-number"><p>08107886566</p></div>
+              <div class="complementary-close">Your faithfully,</div>
+              <div class="sender-name" contenteditable="true">
+                Jessica Agnes
+              </div>
+              <div class="sender-number" contenteditable="true">
+                08107886566
+              </div>
             </div>
           </div>
         </div>

@@ -273,6 +273,15 @@ custom-card:hover {
   padding-bottom: 2.5rem;
 }
 
+.letter .sender-name {
+  font-weight: bold;
+}
+
+.letter .sender-number {
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
 .letter .recipient {
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -282,10 +291,15 @@ custom-card:hover {
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .letter-paragraphs {
-  line-height: 2;
+  line-height: 1.5;
   text-align: justify;
+}
+
+.letter-paragraphs .paragraph {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main.css.map */
