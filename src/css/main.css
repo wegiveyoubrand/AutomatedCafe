@@ -49,8 +49,9 @@ footer {
           box-shadow: 0 0 10px 3px rgba(12, 12, 70, 0.111);
   bottom: 0;
   margin-top: 20px;
-  font-size: 0.85rem;
+  font-size: .9rem;
   line-height: 1.2;
+  white-space: nowrap;
 }
 
 footer > div {
@@ -69,11 +70,6 @@ footer > div {
           align-items: center;
 }
 
-footer > div.active {
-  background-color: #d12f0b;
-  color: #fff;
-}
-
 footer > div:not(:last-child) {
   margin-right: 10px;
 }
@@ -81,6 +77,19 @@ footer > div:not(:last-child) {
 footer > div i {
   font-size: 1rem;
   margin-right: 10px;
+}
+
+footer > div span {
+  display: none;
+}
+
+footer > div.active {
+  background-color: #d12f0b;
+  color: #fff;
+}
+
+footer > div.active span {
+  display: block;
 }
 
 /* Custom Styling */
