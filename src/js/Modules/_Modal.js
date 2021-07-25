@@ -3,7 +3,7 @@ const modalCloser = document.querySelector("#modal-close");
 
 function closeModal() {
   modalCloser.addEventListener("click", (e) => {
-    e.preventDefault;
+    e.preventDefault();
     modal.classList.add("close");
   });
 }
