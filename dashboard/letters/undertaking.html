@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/src/css/main.css" />
+  </head>
+  <style>
+    @media print {
+      button,
+      nav {
+        display: none;
+      }
+      @page {
+        margin: 0 auto;
+      }
+      body {
+        margin: 1.6cm auto;
+      }
+    }
+  </style>
+  <body id="letters">
+    <c-header name="Automated Cafe"></c-header>
+    <main>
+      <div class="letter-container">
+        <div class="letter">
+          <div class="sender">
+            <div class="address">
+              <p>23, Sender Street,</p>
+              <p>Sender Bus-stop</p>
+              <p>Sender Location</p>
+              <p>Sender State</p>
+            </div>
+            <div class="date"><p>23rd July, 2021</p></div>
+          </div>
+          <div class="recipient">
+            <div class="address">
+              <p>The Registrar,</p>
+              <p>Office of the Vice Chancellor,</p>
+              <p>University of Nigeria,</p>
+              <p>Nsukka,</p>
+              <p>Enugu.</p>
+            </div>
+          </div>
+
+          <div class="salutation">Dear Sir / Ma</div>
+          <div class="letter-title">LETTER OF UNDERTAKING</div>
+          <div class="letter-paragraphs">
+            <div class="paragraph-1">
+              <p>
+                My name is Alyson Osborn a new employee in the dispatch
+                department with Kevian Industries. I hereby write this letter to
+                bring to your kind attention that I have not received my salary
+                for the past two months.
+              </p>
+            </div>
+            <div class="paragraph-2">
+              <p>
+                I started working in your company on 1st September 2019 and I
+                was put on probation for three months. I wish to request for my
+                January and February salary. Kindly take up this matter with the
+                relevant department so that I can receive my salary. I depend on
+                the salary for all my needs and this delay is constraining me
+                financially. Please address this matter with urgency and resolve
+                this issue at your earliest. Thank you
+              </p>
+            </div>
+            <div class="closing-remark">Thank you in advance.</div>
+          </div>
+          <div class="signature">
+            <div class="closing"></div>
+            <div class="sender">
+              <div class="complementary-close">Your Faithfully</div>
+              <div class="name"><p>Jessica Agnes</p></div>
+              <div class="Call-number"><p>08107886566</p></div>
+            </div>
+          </div>
+        </div>
+        <button document.title="Page" onclick="window.print()">
+          Print this
+        </button>
+      </div>
+    </main>
+
+    <script src="/src/js/WebComponents/Main.js" type="module"></script>
+  </body>
+</html>

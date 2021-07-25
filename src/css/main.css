@@ -1,0 +1,229 @@
+/* Global Styling */
+*,
+*::before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  position: relative;
+  font-family: "poppins";
+}
+
+ul {
+  list-style: none;
+}
+
+main {
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 4rem;
+  background-color: rgba(12, 12, 70, 0.111);
+}
+
+footer {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  padding: 20px 5%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 3px rgba(12, 12, 70, 0.111);
+          box-shadow: 0 0 10px 3px rgba(12, 12, 70, 0.111);
+  bottom: 0;
+  margin-top: 20px;
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+footer > div {
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer > div.active {
+  background-color: #d12f0b;
+  color: #fff;
+}
+
+footer > div:not(:last-child) {
+  margin-right: 10px;
+}
+
+footer > div i {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+/* Custom Styling */
+.cards {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow-y: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  padding: 20px 5%;
+  grid-gap: 20px;
+}
+
+.welcome {
+  position: relative;
+  padding: 0 5%;
+  width: 100%;
+  z-index: 100;
+  height: auto;
+  margin: 20px 0;
+}
+
+.welcome .hello {
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 6px rgba(17, 6, 122, 0.666);
+          box-shadow: 0 0 6px rgba(17, 6, 122, 0.666);
+  padding: 20px;
+}
+
+/* Web Component Styling */
+c-header {
+  background-color: #190a4c;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 5%;
+  -webkit-box-shadow: 0 0 3px rgba(12, 12, 70, 0.666);
+          box-shadow: 0 0 3px rgba(12, 12, 70, 0.666);
+}
+
+c-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+custom-card {
+  padding: 20px;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-shadow: 0 0 1.5px rgba(12, 12, 70, 0.333);
+          box-shadow: 0 0 1.5px rgba(12, 12, 70, 0.333);
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  border-bottom: 4px solid rgba(12, 12, 70, 0.666);
+}
+
+custom-card:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+#letters main {
+  padding: 20px 5%;
+}
+
+.letter {
+  width: 100%;
+  max-width: 8.5in;
+  min-height: 11in;
+  padding: 5rem 5%;
+  background-color: #fff;
+  margin: 0 auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.letter .sender {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.letter .sender .address {
+  width: 100%;
+}
+
+.letter .sender .complementary-close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: start;
+  padding-bottom: 2.5rem;
+}
+
+.letter .recipient {
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.letter-title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.letter-paragraphs {
+  line-height: 2;
+  text-align: justify;
+}
+/*# sourceMappingURL=main.css.map */

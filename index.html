@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automated Cafe</title>
+
+    <!-- FAVIVON -->
+    <link
+      rel="shortcut icon"
+      href="./public/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+
+  <body>
+    <!-- Web Component Header -->
+    <c-header name="Automated Cafe"> </c-header>
+
+    <main>
+      <div class="welcome">
+        <div class="hello">Welcome</div>
+      </div>
+      <div class="cards">
+        <custom-card
+          name="Print Letters"
+          onclick="location.href='./dashboard/letters/undertaking.html'"
+        ></custom-card>
+        <custom-card name="Pay REMITA"></custom-card>
+        <custom-card name="Check Results"></custom-card>
+        <custom-card name="JAMB Services"></custom-card>
+        <custom-card name="PUTME Invoice RRR"></custom-card>
+        <custom-card name="List where name appear"></custom-card>
+        <custom-card name="Acceptance Letter"></custom-card>
+        <custom-card name="School Fees Reciept"></custom-card>
+        <custom-card name="School Fees Remita"></custom-card>
+        <custom-card name="School Fees Invoice"></custom-card>
+        <custom-card name="List where name appear"></custom-card>
+        <custom-card name="Admission Notification Slip"></custom-card>
+      </div>
+    </main>
+
+    <footer>
+      <div class="active">
+        <i class="fas fa-graduation-cap"></i> Clearance Process
+      </div>
+      <div class="">
+        <i class="far fa-question-circle"></i> Frequently Asked Questions
+      </div>
+      <div class=""><i class="fas fa-book-open"></i> Get Course Materials</div>
+    </footer>
+
+    <!-- Script -->
+    <script src="./src/js/WebComponents/Main.js" type="module"></script>
+  </body>
+</html>
