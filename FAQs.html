@@ -18,23 +18,27 @@
   <body>
     <!-- Web Component Header -->
     <c-header name="Automated Cafe"> </c-header>
-
     <main>
-      <div class="cards">
-        <custom-card name="Letter of Undertaking"></custom-card>
-        <custom-card name="Letter of Attestation"></custom-card>
-        <custom-card name="PUTME Result"></custom-card>
-        <custom-card name="Acceptance Invoice"></custom-card>
-        <custom-card name="Acceptance Letter"></custom-card>
-        <custom-card name="School Fees Reciept"></custom-card>
-        <custom-card name="School Fees Remita"></custom-card>
-        <custom-card name="School Fees Invoice"></custom-card>
-        <custom-card name="Original JAMB Result"></custom-card>
-        <custom-card name="List where name appear"></custom-card>
-        <custom-card name="Admission Letter"></custom-card>
-        <custom-card name="Admission Notification Slip"></custom-card>
-        <custom-card name="Correction of Multiple Admissions"></custom-card>
+      <div class="cards faqs">
+        <faq-card
+          question="My JAMB Caps is still showing not Admitted"
+          answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas voluptatum, explicabo voluptatibus numquam molestias voluptatem necessitatibus beatae facilis quaerat nihil quo ipsum tempora accusamus eveniet eaque molestiae corporis quisquam veritatis."
+        >
+        </faq-card>
+        <faq-card name="Letter of Attestation"></faq-card>
+        <faq-card name="PUTME Result"></faq-card>
+        <faq-card name="Acceptance Invoice"></faq-card>
+        <faq-card name="Acceptance Letter"></faq-card>
+        <faq-card name="School Fees Reciept"></faq-card>
+        <faq-card name="School Fees Remita"></faq-card>
+        <faq-card name="School Fees Invoice"></faq-card>
+        <faq-card name="Original JAMB Result"></faq-card>
+        <faq-card name="List where name appear"></faq-card>
+        <faq-card name="Admission Letter"></faq-card>
+        <faq-card name="Admission Notification Slip"></faq-card>
+        <faq-card name="Correction of Multiple Admissions"></faq-card>
       </div>
+      <button>Post your question</button>
     </main>
 
     <footer>
@@ -56,5 +60,6 @@
 
     <!-- Script -->
     <script src="./src/js/WebComponents/Main.js" type="module"></script>
+    <script src="./src/js/Modules/Main.js" type="module"></script>
   </body>
 </html>

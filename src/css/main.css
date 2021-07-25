@@ -135,6 +135,11 @@ footer > div.active span {
   grid-gap: 20px;
 }
 
+.cards.faqs {
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
 .welcome {
   position: relative;
   padding: 0 5%;
@@ -222,6 +227,60 @@ custom-card {
 custom-card:hover {
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
+}
+
+faq-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+faq-card .question {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(51, 51, 51, 0.333);
+  padding-bottom: 8px;
+}
+
+faq-card .question::after {
+  position: absolute;
+  top: -8px;
+  right: 0;
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free";
+  content: "\f0dd";
+  font-size: 1.5rem;
+}
+
+faq-card.active {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+faq-card.active .question::after {
+  content: "\f0de";
+}
+
+faq-card.active .answer {
+  height: auto;
+}
+
+faq-card .answer {
+  height: 0;
+  overflow: hidden;
+  padding-top: 8px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .banner {
