@@ -19,13 +19,23 @@ body {
   font-family: "poppins";
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
 
-button {
+button,
+.button {
+  display: inline-block;
   padding: 10px 20px;
   cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  margin-top: 10px;
 }
 
 main {
@@ -110,7 +120,7 @@ footer > div.active span {
 .banner-component {
   position: relative;
   padding: 40px 5%;
-  background-color: rgba(12, 12, 70, 0.111);
+  font-size: 0.9rem;
   -webkit-box-shadow: 0 0 3px rgba(12, 12, 70, 0.999);
           box-shadow: 0 0 3px rgba(12, 12, 70, 0.999);
 }
@@ -129,6 +139,11 @@ footer > div.active span {
   transition: 0.25s ease-out;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+}
+
+.banner .button {
+  background-color: rgba(12, 12, 70, 0.999);
+  color: #fff;
 }
 
 .cards {
