@@ -1,4 +1,4 @@
-const accordions = document.querySelectorAll("faq-card");
+const accordions = document.querySelectorAll(".accordion");
 
 accordions.forEach((accordion) => {
   accordion.addEventListener("click", () => {

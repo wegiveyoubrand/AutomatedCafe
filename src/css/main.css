@@ -43,7 +43,7 @@ main {
   height: auto;
   overflow: hidden;
   padding-bottom: 4rem;
-  background-color: rgba(12, 12, 70, 0.111);
+  background-color: rgba(255, 255, 255, 0.111);
 }
 
 footer {
@@ -135,7 +135,7 @@ footer > div.active span {
   grid-gap: 20px;
 }
 
-.cards.faqs {
+.cards.faqs, .cards.stages, .cards.accordions {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
 }
@@ -229,18 +229,18 @@ custom-card:hover {
           transform: scale(1.01);
 }
 
-.faqs faq-card {
+.accordions .accordion {
   position: relative;
 }
 
-.faqs faq-card .question {
+.accordions .accordion .label {
   position: relative;
   padding: 10px;
   background-color: aqua;
   cursor: pointer;
 }
 
-.faqs faq-card .question::before {
+.accordions .accordion .label::before {
   content: "+";
   position: absolute;
   top: 50%;
@@ -250,7 +250,7 @@ custom-card:hover {
   font-size: 1.5rem;
 }
 
-.faqs faq-card .answer {
+.accordions .accordion .content {
   position: relative;
   background-color: #fff;
   overflow: hidden;
@@ -261,12 +261,12 @@ custom-card:hover {
   transition: 0.5s ease-in-out;
 }
 
-.faqs faq-card .answer p {
+.accordions .accordion .content > div {
   padding: 20px;
   padding-top: 1rem;
 }
 
-.faqs faq-card.active .answer {
+.accordions .accordion.active .content {
   max-height: 300px;
 }
 

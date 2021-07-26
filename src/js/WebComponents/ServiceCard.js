@@ -8,13 +8,15 @@ class FAQCard extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = ` 
-      <div class="question">
+      <div class="label">
         ${this.getAttribute("question")} 
        
       </div>
-      <div class="answer">
+      <div class="content">
      
-        <p> ${this.getAttribute("answer")} </p>
+        <div>
+          <p> ${this.getAttribute("answer")} </p>
+        </div>
       </div>
    `;
   }

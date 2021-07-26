@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automated Cafe</title>
+
+    <!-- FAVIVON -->
+    <link
+      rel="shortcut icon"
+      href="./public/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+
+    <!-- FONT AWESOME -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+  </head>
+
+  <body>
+    <!-- Web Component Header -->
+    <c-header name="Automated Cafe"> </c-header>
+
+    <!-- Modal -->
+    <div class="modal">
+      <div class="modal-component">
+        <form-container>
+          <form>
+            <div class="form-group">
+              <label for="">Login / Referral ID:</label>
+              <input type="text" />
+            </div>
+            <button id="modal-close">Continue</button>
+          </form>
+          <a href="#">Why switch to premium?</a>
+        </form-container>
+      </div>
+    </div>
+
+    <!-- Banner -->
+    <!-- <div class="banner">
+      <div class="banner-component">
+        <p>Are you practicing Statemanship / a Business / an Influencer?</p>
+        <p>Do you want to support this project as a show of Love?</p>
+        <a
+          href="https://wa.link/b0fsmz"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="button"
+        >
+          Chat with us now</a
+        >
+
+        <div class="banner-close">
+          <i class="fa fa-times"></i>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Main -->
+    <main>
+      <div class="cards">
+        <custom-card
+          name="Print Letters"
+          onclick="location.href='./dashboard/letters/undertaking.html'"
+        ></custom-card>
+        <custom-card name="Pay REMITA"></custom-card>
+        <custom-card
+          onclick="location.href='https://unnportal.unn.edu.ng/Modules/Applications/PUTME/PUTMEResults/CheckPostUTMEResults.aspx'"
+          name="Print PUTME Result"
+        ></custom-card>
+        <custom-card name="JAMB Services"></custom-card>
+        <custom-card name="Retrieve PUTME RRR"></custom-card>
+        <custom-card name="List where name appear"></custom-card>
+
+        <custom-card name="Acceptance Letter"></custom-card>
+        <custom-card name="School Fees Reciept"></custom-card>
+        <custom-card name="School Fees Remita"></custom-card>
+        <custom-card name="School Fees Invoice"></custom-card>
+        <custom-card name="Admission Slip"></custom-card>
+        <custom-card name="Apply for Hostel"></custom-card>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div>
+        <a href="./index.html"
+          ><i class="fas fa-graduation-cap"></i>
+          <span>Clearance Process</span></a
+        >
+      </div>
+      <div class="">
+        <a href="./FAQs.html">
+          <i class="far fa-question-circle"></i>
+          <span>Frequently Asked Questions</span>
+        </a>
+      </div>
+      <div class="active">
+        <a href="./services.html"
+          ><i class="fas fa-book-open"></i> <span>Recommended Services</span></a
+        >
+      </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="./src/js/WebComponents/Main.js" type="module"></script>
+    <script src="./src/js/Modules/Main.js" type="module"></script>
+  </body>
+</html>
