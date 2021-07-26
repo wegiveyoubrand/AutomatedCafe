@@ -231,7 +231,6 @@ custom-card:hover {
 
 .faqs faq-card {
   position: relative;
-  margin: 0 20px;
 }
 
 .faqs faq-card .question {
@@ -253,7 +252,7 @@ custom-card:hover {
 
 .faqs faq-card .answer {
   position: relative;
-  padding: 10px;
+  padding: 10px 20px;
   background-color: #fff;
   overflow: hidden;
   -webkit-transform: scaleY(0);
