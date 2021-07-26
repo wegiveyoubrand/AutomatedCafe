@@ -229,58 +229,47 @@ custom-card:hover {
           transform: scale(1.01);
 }
 
-faq-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-faq-card .question {
+.faqs faq-card {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.333);
-  padding-bottom: 8px;
+  margin: 0 20px;
 }
 
-faq-card .question::after {
+.faqs faq-card .question {
+  position: relative;
+  padding: 10px;
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.faqs faq-card .question::before {
+  content: "+";
   position: absolute;
-  top: -8px;
-  right: 0;
-  font-weight: 900;
-  font-family: "Font Awesome 5 Free";
-  content: "\f0dd";
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 1.5rem;
 }
 
-faq-card.active {
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-faq-card.active .question::after {
-  content: "\f0de";
-}
-
-faq-card.active .answer {
-  height: auto;
-}
-
-faq-card .answer {
-  height: 0;
+.faqs faq-card .answer {
+  position: relative;
+  padding: 10px;
+  background-color: #fff;
   overflow: hidden;
-  padding-top: 8px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  height: 0;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  overflow-y: auto;
+}
+
+.faqs faq-card.active .answer {
+  -webkit-transform: scaleY(100%);
+          transform: scaleY(100%);
+  height: 200px;
 }
 
 .banner {
@@ -310,8 +299,8 @@ faq-card .answer {
 }
 
 .banner.close {
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
+  -webkit-transition: 0.5s ease-out;
+  transition: 0.5s ease-out;
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
 }
