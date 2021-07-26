@@ -17,6 +17,7 @@ body {
 body {
   position: relative;
   font-family: "poppins";
+  font-size: 14px;
 }
 
 a {
@@ -239,7 +240,9 @@ custom-card:hover {
 .accordions .accordion .label {
   position: relative;
   padding: 10px;
-  background-color: aqua;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 5px rgba(12, 12, 70, 0.111);
+          box-shadow: 0 2px 5px rgba(12, 12, 70, 0.111);
   cursor: pointer;
 }
 
@@ -262,6 +265,10 @@ custom-card:hover {
   max-height: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
+  overflow-y: auto;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  transform-origin: top;
 }
 
 .accordions .accordion .content > div {
@@ -270,6 +277,8 @@ custom-card:hover {
 }
 
 .accordions .accordion.active .content {
+  -webkit-transform: scaleY(100%);
+          transform: scaleY(100%);
   max-height: 300px;
 }
 
