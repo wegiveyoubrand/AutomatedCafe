@@ -131,7 +131,7 @@ footer > div.active span {
   display: grid;
   -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
       grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  padding: 20px 5%;
+  padding: 1rem 5%;
   grid-gap: 20px;
 }
 
@@ -153,7 +153,7 @@ footer > div.active span {
 .welcome .hello {
   text-align: left;
   width: 100%;
-  background-color: rgba(17, 6, 122, 0.111);
+  background-color: rgba(17, 6, 122, 0.07);
   padding: 20px;
 }
 
