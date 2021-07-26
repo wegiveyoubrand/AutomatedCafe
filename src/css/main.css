@@ -233,6 +233,7 @@ custom-card:hover {
 
 .accordions .accordion {
   position: relative;
+  font-size: 14px;
 }
 
 .accordions .accordion .label {
