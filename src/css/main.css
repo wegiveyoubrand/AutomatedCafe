@@ -144,7 +144,7 @@ footer > div.active span {
   position: relative;
   padding: 0 5%;
   width: 100%;
-  z-index: 90;
+  z-index: -1;
   height: auto;
   margin: 20px 0;
 }
@@ -161,9 +161,12 @@ footer > div.active span {
 
 /* Web Component Styling */
 c-header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
   background-color: #190a4c;
   color: #fff;
-  position: relative;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,6 +180,7 @@ c-header {
   padding: 20px 5%;
   -webkit-box-shadow: 0 0 3px rgba(12, 12, 70, 0.666);
           box-shadow: 0 0 3px rgba(12, 12, 70, 0.666);
+  font-size: 0.9rem;
 }
 
 c-header c-brand {
@@ -271,11 +275,11 @@ custom-card:hover {
 }
 
 .banner {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: -1;
   background-color: #fff;
 }
 
