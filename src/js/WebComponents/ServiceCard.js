@@ -13,8 +13,8 @@ class FAQCard extends HTMLElement {
        
       </div>
       <div class="answer">
-      ${this.getAttribute("answer")} 
-
+     
+        <p> ${this.getAttribute("answer")} </p>
       </div>
    `;
   }

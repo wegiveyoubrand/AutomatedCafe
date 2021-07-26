@@ -252,23 +252,22 @@ custom-card:hover {
 
 .faqs faq-card .answer {
   position: relative;
-  padding: 10px 20px;
   background-color: #fff;
   overflow: hidden;
-  -webkit-transform: scaleY(0);
-          transform: scaleY(0);
   -webkit-transform-origin: top;
           transform-origin: top;
-  height: 0;
+  max-height: 0;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  overflow-y: auto;
+}
+
+.faqs faq-card .answer p {
+  padding: 20px;
+  padding-top: 1rem;
 }
 
 .faqs faq-card.active .answer {
-  -webkit-transform: scaleY(100%);
-          transform: scaleY(100%);
-  height: 200px;
+  max-height: 300px;
 }
 
 .banner {
