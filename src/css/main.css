@@ -481,11 +481,22 @@ form-container a {
 }
 
 .letter .sender .complementary-close {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   justify-self: start;
   padding-bottom: 2.5rem;
+}
+
+.letter .sender .complementary-close::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 2px;
+  background-color: #000;
 }
 
 .letter .sender-name {
@@ -510,7 +521,7 @@ form-container a {
 }
 
 .letter-paragraphs {
-  line-height: 1.5;
+  line-height: 2;
   text-align: justify;
 }
 
