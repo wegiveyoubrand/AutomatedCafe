@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="./public/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+
+    <!-- MATERIAL ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect " href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  -->
+    <title>UNN Freshers</title>
+  </head>
+  <body>
+    <header>
+      <div class="brand toHome active" id="toHome">
+        <div class="logo">
+          <img src="./public/images/unn-logo.png" alt="" />
+        </div>
+        <div class="">UNNFreshers</div>
+      </div>
+
+      <div class="tab">
+        <div class="menuToggle">
+          <i class="material-icons">menu</i>
+        </div>
+      </div>
+    </header>
+
+
+    <aside class="">
+      <div class="aside">
+        <div class="close-aside" id="closeAside">
+          <i class="material-icons">close</i>
+        </div>
+        <ul>
+          <li class="">
+            <a href="./index.html"><i class="material-icons">home</i> Home </a>
+          </li>
+          <li class="active">
+            <a href="./myadmissionstatus.html"
+              ><i class="material-icons">admin_panel_settings</i> My Admission
+              Status</a
+            >
+          </li>
+          <li>
+            <a href="/JAMBServices.html"
+              ><i class="material-icons">school</i> JAMB Services</a
+            >
+          </li>
+          <li>
+            <a href="/JAMBServices.html"
+              ><i class="material-icons">self_improvement</i> Educational /
+              Career Counselor</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="material-icons">browser_updated</i> Scholarship
+              Updates</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="material-icons">meeting_room</i> Housing &
+              Accomodation</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="material-icons">menu_book</i> Books & Past Questions</a
+            >
+          </li>
+          <li>
+            <a href=""
+              ><i class="material-icons">mark_chat_unread</i> Connect / Chat</a
+            >
+          </li>
+
+          <li class="get-started">
+            <a href=""
+              >Get Started <i class="material-icons">chevron_right</i></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="closeAside"></div>
+    </aside>
+
+    <main class="container">
+      <div class="wrapper">
+        <h2>Type Your JAMB Registration Number to Check Admission</h2>
+
+        <form action="#">
+          <select name="" id="">
+            <option value="">Select Session...</option>
+            <option value="">2016 - 2017</option>
+            <option value="">2017 - 2018</option>
+            <option value="">2018 - 2019</option>
+            <option value="">2019 - 2020</option>
+            <option value="">2021 - 2021</option>
+          </select>
+          <input
+            type="text"
+            id="search"
+            placeholder="JAMB Reg Number"
+            autocomplete="off"
+            required
+          />
+          <button id="activateModal">Check Status</button>
+        </form>
+      </div>
+
+      <div class="modalResponse">
+        <div class="modal-content">
+          <div class="close-modal">X</div>
+          <div id="confirmStatus"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="">About Company</div>
+    </footer>
+
+    <script src="./src/js/main.js" use-strict></script>
+  </body>
+</html>

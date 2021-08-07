@@ -1,0 +1,24 @@
+[
+  {
+    "First Semester": {
+      "GSP 101": "Introduction to English",
+      "GSP 105": "Introduction to English",
+      "GSP 201": "Introduction to English",
+      "GSP 207": "Introduction to English",
+      "GSP 103": "Social Science I",
+
+      "COS 101": "Introduction to Computer Studies",
+      "COS 201": "",
+      "COS 304": "Operating System",
+
+      "CEDR 304": "Introduction to Entrepreneurship"
+    },
+
+    "Second Semester": {
+      "GSP 102": "Introduction to English II",
+      "GSP 106": "Basic Science",
+
+      "GSP 202": ""
+    }
+  }
+]

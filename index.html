@@ -4,241 +4,220 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Automated Cafe</title>
 
-    <!-- FAVIVON -->
+    <!-- FAVICON -->
     <link
       rel="shortcut icon"
-      href="./public/favicon/favicon.ico"
+      href="./public/images/favicon/favicon.ico"
       type="image/x-icon"
     />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
 
-    <!-- FONT AWESOME -->
+    <!-- MATERIAL ICONS -->
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Poppins:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
 
-    <!-- CSS Link -->
-    <link rel="stylesheet" href="./src/css/main.css" />
+    <!--  -->
+    <title>The Automated Cafe</title>
   </head>
-
-  <body>
-    <!-- Web Component Header -->
-    <c-header name="Automated Cafe"> </c-header>
-
-    <!-- Modal -->
-    <div class="modal">
-      <div class="modal-component">
-        <form-container>
-          <form>
-            <div class="form-group">
-              <label for="">Login / Referral ID:</label>
-              <input type="text" />
-            </div>
-            <button id="modal-close">Continue</button>
-          </form>
-          <a href="#">Why switch to premium?</a>
-        </form-container>
-      </div>
-    </div>
-
-    <!-- Banner -->
-    <!-- <div class="banner">
-      <div class="banner-component">
-        <p>Are you practicing Statemanship / a Business / an Influencer?</p>
-        <p>Do you want to support this project as a show of Love?</p>
-        <a
-          href="https://wa.link/b0fsmz"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button"
-        >
-          Chat with us now</a
-        >
-
-        <div class="banner-close">
-          <i class="fa fa-times"></i>
+  <body id="home">
+    <!-- HEADER -->
+    <header>
+      <div class="brand toHome active" id="toHome">
+        <div class="logo">
+          <img src="./public/images/kkk.png" alt="" />
+        </div>
+        <div class="">
+          <span></span> <span>Automated</span> <span>Caf&#201;</span>
         </div>
       </div>
-    </div> -->
 
-    <!-- Main -->
-    <main>
-      <div class="welcome">
-        <div class="hello"><span>Hello!</span> Welcome User</div>
+      <nav>
+        <ul>
+          <li><a href="">For Businesses</a></li>
+          <li><a href="">Developers</a></li>
+        </ul>
+
+        <div class="gotoDashoard">
+          <a href="./auth/login.html" class="button">Get Started</a>
+        </div>
+
+        <div class="menu menuToggle">
+          <i class="material-icons">menu</i>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ASIDE -->
+    <aside class="">
+      <div class="aside">
+        <div class="close-aside" id="closeAside">
+          <i class="material-icons">close</i>
+        </div>
+        <ul>
+          <li class="">
+            <a href="./index.html"
+              ><i class="material-icons">home</i> For Businesses</a
+            >
+          </li>
+          <li>
+            <a href="./UserAccount.html"
+              ><i class="material-icons">work</i> Developers
+            </a>
+          </li>
+
+          <li>
+            <a href="/JAMBServices.html"
+              ><i class="material-icons">school</i> Privacy Policy</a
+            >
+          </li>
+          <li>
+            <a href="/Blog.html"><i class="material-icons">book</i> Blog</a>
+          </li>
+
+          <li class="get-started">
+            <a href="./auth/login.html">
+              Get Started <i class="material-icons">login</i></a
+            >
+          </li>
+        </ul>
       </div>
-      <div class="cards stages accordions">
-        <div class="stage accordion">
-          <div class="stage-title label">
-            <h3>Stage 1</h3>
-            <p class="stage-subtitle">Print out neccessary Documents</p>
-          </div>
-          <div class="processes cards accordions content">
-            <div class="accordion">
-              <div class="label">O'Level Result</div>
-              <div class="content">
-                <div>
+      <div id="closeAside"></div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="container">
+      <section class="wrapper hero">
+        <div class="slider">
+          <div class="slides">
+            <div class="slide">
+              <h1>
+                Connectivity, Speed and Efficiency
+                <span>
                   <p>
-                    Your WAEC or NECO or NABTEB result or a combination of any
-                    two of them where you made the minimum 5 credit passes on
-                    subjects relevant to your field of study.
+                    The third-party integratable platform to assist in making
+                    education life and learning process easier and better.
                   </p>
-                  <button>Get Yours</button>
-                </div>
-              </div>
+                </span>
+              </h1>
             </div>
-            <div class="accordion">
-              <div class="label">Admission List</div>
-              <div class="content">
-                <div>
+            <div class="slide">
+              <h1>
+                Data, Airtime, Quality Products and Durable Services
+                <span>
+                  <p>All in one reach at the tip of your mobile device</p>
+                </span>
+              </h1>
+            </div>
+            <div class="slide">
+              <h1>
+                Professional services, connecting with people that matter most
+                <span>
                   <p>
-                    The page of the admission list published on the university
-                    website where your name appeared.
+                    All in its possibilities with peer-to-peer connections and
+                    business partnerships
                   </p>
-                  <button>Get Yours</button>
-                </div>
-              </div>
+                </span>
+              </h1>
             </div>
-            <div class="accordion">
-              <div class="label">Attestation Letter</div>
-              <div class="content">
-                <div>
-                  <p>
-                    This is a short letter written by any of your parents or
-                    guardians or any other person in a recognizable position of
-                    authority who knows you well enough (e.g. Pastor,
-                    Traditional ruler, any officeholder, etc.). The letter
-                    addressed to the registrar of the university should simply
-                    attest that you will be of good behaviour and abide by the
-                    University rules and regulations.
-                  </p>
-                  <button>Get Yours</button>
-                </div>
-              </div>
-            </div>
-            <div class="accordion">
-              <div class="label">Admission Slip / Letter</div>
-              <div class="content">
-                <div>
-                  <p>
-                    This will be printed from the university portal after you
-                    have completed the acceptance form online.
-                  </p>
-                  <button>Get Yours</button>
-                </div>
-              </div>
-            </div>
-            <div class="accordion">
-              <div class="label">JAMB Result</div>
-              <div class="content">
-                <div>
-                  <p>The online result printed out from your JAMB Portal</p>
-                  <button>Get Yours</button>
-                </div>
-              </div>
-            </div>
-            <div class="accordion">
-              <div class="label">Screening Result</div>
-              <div class="content">
-                <div>
-                  <p>A printout of your UNN Post UTME Screening result slip</p>
-                  <button>Get Yours</button>
-                </div>
-              </div>
-            </div>
-            <div class="accordion">
-              <div class="label">Birth Certificate</div>
-              <div class="content">
-                <div>
-                  <p>
-                    Your birth certificate or baptismal card or age declaration
-                    document obtained from a Court of Law.
-                  </p>
-                  <button>Get Yours</button>
-                </div>
-              </div>
-            </div>
-            <div class="accordion">
-              <div class="label">Local Government Identification Letter</div>
-              <div class="content">
-                <div>
-                  <p>
-                    This is a document you will get from the secretariat of your
-                    local government of origin confirming your nativity. To get
-                    this, you may need an introduction/ confirmation letter from
-                    the traditional ruler of your community or any other
-                    respected individual from your town.
-                  </p>
-                  <button>Get Yours</button>
-                </div>
-              </div>
-            </div>
-            <div class="accordion">
-              <div class="label">Screening Result</div>
-              <div class="content">
-                <div>
-                  <p>A printout of your UNN Post UTME Screening result slip</p>
-                  <button>Get Yours</button>
-                </div>
-              </div>
+            <div class="slide">
+              <h1>
+                Our Goal, Our Mission and Vision
+                <span>
+                  <p>is you <em>Disvovering Happiness</em></p>
+                </span>
+              </h1>
             </div>
           </div>
+          <div class="slide-navigator"></div>
         </div>
-        <div class="stage accordion">
-          <div class="stage-title label">
-            <h3>Stage 2</h3>
-            <p class="stage-subtitle">Arrange document for First submission</p>
-          </div>
-        </div>
-        <div class="stage accordion">
-          <div class="stage-title label">
-            <h3>Stage 3</h3>
-            <p class="stage-subtitle">
-              Make photocopies of documents after approval
+      </section>
+
+      <section class="">
+        <div class="section-content">
+          <h1 class="section-title">Why TAC is developed</h1>
+          <div class="">
+            <p>
+              It is an education technological platform that has come to create
+              the transformation needed for the consistent ease of
+              communication, with institutions, stakeholders and the educational
+              bodies.
             </p>
           </div>
         </div>
-        <div class="stage accordion">
-          <div class="stage-title label">
-            <h3>Stage 4</h3>
-            <p class="stage-subtitle">
-              Fill documents, arrange and attached passports
-            </p>
+      </section>
+
+      <section>
+        <h1 class="section-title">Straightforward Pricing</h1>
+        <div class="pricing-options"></div>
+        <div class="pricing-plans grid-2">
+          <div class="pricing-plan">
+            <div class="pricing-plan__name">
+              Free Plan</span>
+            </div>
+            <div class="pricing-plan__price">0 NGN</div>
+            <div class="pricing-plan__features">
+              <ul>
+                <li>Video & Voice Call Assistance</li>
+                <li>1 : 1 Chat</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pricing-plan">
+            <div class="pricing-plan__name">Pro Plan</div>
+            <div class="pricing-plan__price"></div>
+          </div>
+          <div class="pricing-plan">
+            <div class="pricing-plan__name">Plus Plan</div>
+            <div class="pricing-plan__price"></div>
           </div>
         </div>
-        <div class="stage accordion">
-          <div class="stage-title label">
-            <h3>Stage 5</h3>
-            <p class="stage-subtitle">Final submission</p>
+      </section>
+
+      <section>
+        <h1 class="section-title">Upcoming Events</h1>
+        <div class="events">
+          <div class="event">
+            <div class="event__date">23rd August 2021</div>
+            <a href="#" class="event__action button">Save the date</a>
           </div>
+        </div>
+      </section>
+
+      <div class="modalResponse">
+        <div class="modal-content">
+          <div class="close-modal">X</div>
+          <div id="confirmStatus"></div>
         </div>
       </div>
     </main>
 
-    <!-- Footer -->
     <footer>
-      <div class="active">
-        <a href=""
-          ><i class="fas fa-graduation-cap"></i>
-          <span>Clearance Process</span></a
-        >
-      </div>
-      <div class="">
-        <a href="./FAQs.html">
-          <i class="far fa-question-circle"></i>
-          <span>Frequently Asked Questions</span>
-        </a>
-      </div>
-      <div>
-        <a href="./services.html"
-          ><i class="fas fa-book-open"></i> <span>Recommended Services</span></a
-        >
+      <div class="footer-1">
+        <div class="facebook">
+          <img src="./dashboard/public/images/social-icons/facebook-circled.svg" alt="">
+        </div>
+        <div class="google">
+          <img src="./dashboard/public/images/social-icons/google.svg" alt="">
+        </div>
+        <div class="linkedin">
+          <img src="./dashboard/public/images/social-icons/linkedin.svg" alt="">
+        </div>
       </div>
     </footer>
 
-    <!-- Script -->
-    <script src="./src/js/WebComponents/Main.js" type="module"></script>
-    <script src="./src/js/Modules/Main.js" type="module"></script>
+    <script src="./src/js/main.js"></script>
+    <script src="./controllers/router.js"></script>
   </body>
 </html>

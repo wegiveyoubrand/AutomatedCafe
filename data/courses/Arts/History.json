@@ -1,0 +1,15 @@
+[
+  {
+    "First Semester": {
+      "HIS 101": ["Introduction to History", 2],
+      "HIS 103": ["Introduction to International Studies", 2],
+      "HIS 111": ["Nigeria up to 1900", 3],
+      "HIS 121": ["Africa, 1500 to 1800", 3],
+      "HIS 131": ["Europe to the French Revolution", 3]
+    },
+
+    "Second Semester": {
+      "HIS 102": ["Introduction to Economic History", 2]
+    }
+  }
+]

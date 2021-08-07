@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Automated Cafe - Dashboard</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="./public/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+
+    <!-- MATERIAL ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="TechMarket">
+    <div class="wrapper">
+      <!-- SIDE COMPONENTS -->
+      <div class="side-nave"></div>
+
+      <div class="container">
+        <!-- HEADER COMPONENT -->
+
+        <header></header>
+
+        <!-- MAIN COMPONENTS -->
+        <main>
+          <div
+            class="intro-section"
+            style="
+              background-image: url('./public/images/oliver-pecker-HONJP8DyiSM-unsplash.jpg');
+            "
+          >
+            <h1>Welcome to the Automated Cafe Ministore</h1>
+          </div>
+
+          <div class="navigation-pane">
+            <div class="tabs">
+              <div class="tab active">All</div>
+              <div class="tab">Books</div>
+              <div class="tab">Stationeries</div>
+              <div class="tab">Gadgets</div>
+              <div class="tab">Course materials</div>
+            </div>
+          </div>
+
+          <section>
+            <h3 class="section-title">Popular Trending</h3>
+            <div class="products cards">
+              <div class="card product">
+                <div class="product__available"></div>
+                <a
+                  href="https://paystack.com/buy/oriamo-27000mah-traveler-powerbank-dapesb"
+                  target="__blank"
+                >
+                  <img
+                    src="./public/images/OPB-P271D_2.jpg"
+                    alt=""
+                    class="card__image"
+                  />
+                  <div class="product__text">
+                    <p class="product__name">Oriamo 27,000mAh PowerBank</p>
+                  </div>
+                </a>
+              </div>
+              <div class="card product">
+                <a
+                  href="https://paystack.com/buy/c-torch-led-rechargeable-saver-bulb-obzhwe"
+                  target="__blank"
+                >
+                  <img
+                    src="./public/images/products/d74b886484ec2bd16ce498b77f48b64d31679a1b.jpg"
+                    alt=""
+                    class="card__image"
+                  />
+                  <div class="product__text">
+                    <p class="product__name">
+                      C-Torch LED Rechargeble Saver bulb
+                    </p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="card product">
+                <a
+                  href="https://paystack.com/buy/oriamo-2-meters-long-cable-mnevhm"
+                  target="__blank"
+                >
+                  <img
+                    src="./public/images/products/Oriamo-2metre.jpg"
+                    alt=""
+                    class="card__image"
+                  />
+                  <div class="product__text">
+                    <p class="product__name">Oriamo 2metres Android Cord</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- <div class="note">
+            <h4>Terms and conditions</h4>
+            <h4>Return policy</h4>
+            <h4>Warranty</h4>
+          </div> -->
+        </main>
+
+        <!-- FOOTER COMPONENT -->
+        <footer></footer>
+      </div>
+      <!-- MODAL COMPONENT -->
+      <div class="modal"></div>
+    </div>
+
+    <script src="./src/js/Components/_all.js" type="module"></script>
+    <script src="./src/js/main.js" type="module"></script>
+  </body>
+</html>

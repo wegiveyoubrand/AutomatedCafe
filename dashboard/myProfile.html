@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Automated Cafe - Dashboard</title>
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="/public/images/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+
+    <!-- MATERIAL ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Poppins:wght@200;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body id="myProfile">
+    <div class="wrapper">
+      <!-- SIDE COMPONENTS -->
+      <div class="side-nave">
+        <ul>
+          <li>
+            <a href="./features/tradeMarket.html"
+              ><i class="material-icons">trending_up</i> Trade Market</a
+            >
+          </li>
+          <li>
+            <a href="./Blog.html"
+              ><i class="material-icons">tag</i> What's Trending</a
+            >
+          </li>
+
+          <li class="file-manager">
+            <a href="./features/filemanager.html"
+              ><i class="material-icons">cases</i> My File Manager</a
+            >
+          </li>
+          <li>
+            <a href="./features/portfolio.html"
+              ><i class="material-icons">label_important</i> Portfolio
+              Records</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="container">
+        <!-- HEADER COMPONENT -->
+
+        <header>
+          <div class="nav-toggle">
+            <i class="material-icons">menu</i>
+          </div>
+
+          <div class="welcome-text">
+            <p id="greeting"></p>
+          </div>
+
+          <div class="user">
+            <div class="avatar">
+              <div class="avatar__image">
+                <i class="material-icons">person</i>
+              </div>
+            </div>
+
+            <div class="user_options">
+              <div class=""><i class="material-icons">person</i>My profile</div>
+              <div class="" id="user_logout">
+                <i class="material-icons"> logout </i> Logout
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- MAIN COMPONENTS -->
+        <main>
+          <div class="container">
+            <div class="user-profile">
+              <div class="user">
+                <div class="content-title">My Profile</div>
+
+                <div class="user__avatar">
+                  <img src="./public/images/Layer 1.png" alt="" />
+                </div>
+                <div class="user__name">Name: <span>Ishaili Paul C.</span></div>
+                <!-- <div class="user__course">
+                  Course: <span>Molecular Biology and Technology</span>
+                </div>
+                <div class="user__level">
+                  Level of Study: <span>Fresher</span>
+                </div>
+                <div class="user__Institution">
+                  Institution: <span>UNN</span>
+                </div> -->
+
+                <div class="user__edit">
+                  <i class="material-icons">edit</i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- FOOTER COMPONENT -->
+        <footer>
+          <div class="footer-component">
+            <div class="active" onclick='location.href="./index.html"'>
+              <i class="material-icons"> home</i>home
+            </div>
+            <div class=""><i class="material-icons">chat</i>chat</div>
+            <div class="" id="searchBar">
+              <i class="material-icons">search</i>search
+            </div>
+          </div>
+        </footer>
+      </div>
+      <!-- MODAL COMPONENT -->
+      <div class="modal">
+        <!-- Compoent -->
+        <div class="modal-content">
+          <div class="search-bar">
+            <input type="text" placeholder="what are you looking for?" />
+            <button type="button">Search</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/js/main.js" type="module"></script>
+  </body>
+</html>
