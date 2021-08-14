@@ -53,18 +53,19 @@
 
           <div class="navigation-pane">
             <div class="tabs">
-              <div class="tab active">All</div>
-              <div class="tab">Books</div>
-              <div class="tab">Stationeries</div>
-              <div class="tab">Gadgets</div>
-              <div class="tab">Course materials</div>
+              <div class="tab active" data-filter="all">All</div>
+              <div class="tab" data-filter="accessories">Accesories</div>
+              <div class="tab" data-filter="books">Books</div>
+              <div class="tab" data-filter="stationeries">Stationeries</div>
+              <div class="tab" data-filter="gadgets">Gadgets</div>
+              <div class="tab" data-filter="material">Phones</div>
             </div>
           </div>
 
           <section>
             <h3 class="section-title">Popular Trending</h3>
             <div class="products cards">
-              <div class="card product">
+              <div class="card product" data-item="accessories">
                 <div class="product__available"></div>
                 <a
                   href="https://paystack.com/buy/oriamo-27000mah-traveler-powerbank-dapesb"
@@ -141,6 +142,7 @@
     </div>
 
     <script src="./src/js/Components/_all.js" type="module"></script>
+    <script src="./src/js/modules/data-filter.js"></script>
     <script src="./src/js/main.js" type="module"></script>
   </body>
 </html>
