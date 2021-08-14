@@ -904,6 +904,7 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 20px 5%;
+  grid-gap: 10px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
