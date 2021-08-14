@@ -898,9 +898,10 @@
 }
 
 .cards.products {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding: 20px 5%;
@@ -908,6 +909,13 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+@media (max-width: 580px) {
+  .cards.products {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card {
@@ -1047,7 +1055,7 @@
 
 .card.product {
   position: relative;
-  width: 150px;
+  width: 100%;
   padding: 10px;
   -webkit-box-shadow: none;
           box-shadow: none;
