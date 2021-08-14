@@ -436,7 +436,6 @@
   overflow: hidden;
   padding: 8px 20px;
   font-weight: 500;
-  border-radius: 15px;
   display: -ms-grid;
   display: grid;
   margin: 10px;
@@ -460,7 +459,6 @@
 }
 
 .navigation-pane .tabs .tab::before {
-  border-radius: 15px;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border: 1px dotted #222222;
@@ -900,20 +898,15 @@
 }
 
 .cards.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px 5%;
-  -ms-grid-columns: (minmax(320px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-}
-
-@media (max-width: 520px) {
-  .cards.products {
-    grid-gap: 20px 5%;
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .card {
@@ -1053,28 +1046,37 @@
 
 .card.product {
   position: relative;
-  padding: 5%;
+  width: 200px;
+  padding: 10px;
   -webkit-box-shadow: none;
           box-shadow: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px rgba(17, 17, 85, 0.022);
+          box-shadow: 0 0 5px rgba(17, 17, 85, 0.022);
+  border-radius: 0;
+  border: 1px solid rgba(17, 17, 85, 0.022);
+}
+
+.card.product button {
   background-color: #111155;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
 }
 
 .card.product .card__image {
-  height: 200px;
-  width: 200px;
+  height: 120px;
+  width: 100%;
   margin: 0 auto;
-  border-radius: 50%;
   overflow: hidden;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: block;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .card.product .product__text {
   padding: 20px 5%;
   font-size: 1rem;
-  font-weight: 300;
-  color: #fff;
+  font-weight: 500;
 }
 
 .card.product .product__name {
@@ -1445,5 +1447,11 @@ img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+button {
+  font-size: 100%;
+  border: none;
+  outline: none;
 }
 /*# sourceMappingURL=main.css.map */
