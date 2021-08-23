@@ -423,23 +423,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 0 5%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  white-space: nowrap;
+  overflow-x: auto;
+  word-wrap: unset;
+  padding: 10px 5%;
+}
+
+@media (max-width: 580px) {
+  .navigation-pane .tabs {
+    margin-bottom: 10px;
+  }
 }
 
 .navigation-pane .tabs .tab {
   position: relative;
-  overflow: hidden;
-  padding: 6px 10px;
-  font-weight: 700;
-  font-size: 12px;
+  padding: 6px 1rem;
+  font-weight: 500;
+  font-size: 1rem;
   display: -ms-grid;
   display: grid;
   margin: 10px;
+  margin-right: 20px;
   place-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -462,7 +469,6 @@
 .navigation-pane .tabs .tab::before {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  border: 1px dotted #222222;
 }
 
 .navigation-pane .tabs .tab::after {
@@ -479,6 +485,7 @@
 .navigation-pane .tabs .tab:hover, .navigation-pane .tabs .tab.active {
   cursor: pointer;
   color: #fff;
+  font-weight: 700;
 }
 
 .navigation-pane .tabs .tab:hover::after, .navigation-pane .tabs .tab:hover::before, .navigation-pane .tabs .tab.active::after, .navigation-pane .tabs .tab.active::before {
@@ -901,21 +908,20 @@
 .cards.products {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 20px 5px;
-  grid-gap: 10px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  padding: 20px 5%;
+  grid-gap: 20px;
 }
 
 @media (max-width: 580px) {
   .cards.products {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2px;
+    padding: 20px 5px;
   }
 }
 
@@ -1056,8 +1062,10 @@
 
 .card.product {
   position: relative;
+  height: auto;
+  min-height: 300px;
   width: 100%;
-  padding: 10px;
+  padding: 20px;
   -webkit-box-shadow: none;
           box-shadow: none;
   background-color: #fff;
@@ -1065,6 +1073,19 @@
           box-shadow: 0 0 5px rgba(17, 17, 85, 0.022);
   border-radius: 0;
   border: 1px solid rgba(17, 17, 85, 0.022);
+}
+
+.card.product a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .card.product button {
@@ -1107,6 +1128,15 @@
   border-radius: 50%;
   background-color: green;
   z-index: 100;
+}
+
+.card.product .product__action {
+  padding: 1rem;
+}
+
+.card.product .product__action button {
+  padding: 1rem;
+  font-family: "poppins";
 }
 
 .card.access .card__image {

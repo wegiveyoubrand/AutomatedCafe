@@ -34,6 +34,24 @@ services.forEach((service) => {
           modalContent.innerHTML = AirtimeandData;
         } else if (lowerData == "online payment") {
           modalContent.innerHTML = OnlinePayment;
+          const RRRNumber = document.querySelector("#RRRNumber");
+
+          const PayRemitta = document.querySelector("#pay-remita");
+
+          RRRNumber.addEventListener("input", (e) =>
+            console.log(e.target.value)
+          );
+
+          console.log(PayRemitta);
+          PayRemitta.addEventListener("click", (event) => {
+            if (RRRNumber.value.length == 12) {
+              let PayLocation = `https://login.remita.net/remita/onepage/biller/${RRRNumber.value}/payment.spa`;
+              event.preventDefault;
+              location.href = PayLocation;
+            } else {
+              alert("error");
+            }
+          });
         } else {
           alert("error");
           modalContent.innerHTML = "";
@@ -46,7 +64,7 @@ services.forEach((service) => {
 // Set Modal Content
 const ComputerServicesContent = `Hello Computer Services`;
 const AirtimeandData = `<div class="form-container">
-<form>
+<form name='Online-Pay'>
     <div class="form-group">
       <label>Enter mobile number</label>
       <input type="text">
@@ -55,19 +73,22 @@ const AirtimeandData = `<div class="form-container">
   </form>
 </div>
 `;
-const OnlinePayment = `<div class ="form-container">
-<form name="RemitaPay">
-  <div class="form-group " >
-  <select disabled>
-    <option selected>Remita</option>
-    <option>eTranzact</option>
-    <option>Bank Transfer</option>
-  </select>
-</div>
-<div class="form-group">
+const OnlinePayment = `
+  <div class ="form-container">
+    <form name="RemitaPay" action= "/">
+      <div class="form-group " >
+        <select disabled>
+          <option selected>Remita</option>
+          <option>eTranzact</option>
+          <option>Bank Transfer</option>
+        </select>
+      </div>
+      <div class="form-group">
 
-<input type="text" placeholder="Enter RRR number" name="RRR" id="RRRNumber">
-</div>
-<a onclick="getInputValue()">Pay Remita</a>
-</form></div>
+        <input type="text" placeholder="Enter RRR number" name="RRR" id="RRRNumber">
+      </div>
+      <button type="button" id= "pay-remita">Pay Remita</button>
+
+    </form>
+  </div>
 `;
