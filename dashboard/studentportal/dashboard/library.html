@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <!-- ===== LINKING STYLESHEET ===== -->
+    <link rel="stylesheet" href="../src/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- ===== SIDEBAR COMPONENT =====  -->
+        <div class="side-container">
+            <ul class="nav" id="sideNav">
+               
+            </ul>
+        </div>
+
+        <div class="container">
+
+            <!-- ===== HEADER COMPONENT ===== -->
+            <header></header>
+
+            <!-- ===== MAIN COMPONENT ===== -->
+            <main id="myDocuments">
+                <div class="main-inner">
+                    <div class="cards">
+                        <div class="card">
+                           Course Materials
+                        </div>
+                       
+                        <div class="card">
+                           Textbooks
+                        </div>
+                        <div class="card">
+                           Handouts
+                        </div>
+                        
+                    </div>
+                </div>
+            </main>
+
+            <!-- ===== LIVE QUERY SEARCH COMPONENT -->
+            <div class="live-search-query"></div>
+
+        </div>
+    </div>
+
+    <script src="../js/app.js" type="module"></script>
+    <script src="../js/components/live-query-search.js"></script>
+    <script src="../js/components/header.js"></script>
+</html>

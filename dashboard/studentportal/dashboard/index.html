@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+
+    <!-- ===== LINKING STYLESHEET ===== -->
+    <link rel="stylesheet" href="../src/css/main.css" />
+
+    <!-- MATERIAL ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- ===== SIDEBAR COMPONENT =====  -->
+      <div class="side-container">
+        <ul class="nav" id="sideNav"></ul>
+      </div>
+
+      <div class="container">
+        <!-- ===== HEADER COMPONENT ===== -->
+        <header></header>
+
+        <!-- ===== MAIN COMPONENT ===== -->
+        <main id="home">
+          <div class="main-inner">
+            <div class="student__image">
+              <div class="studentAvatar"></div>
+            </div>
+
+            <div class="studentBio">
+              <p id="studentName"></p>
+              <button onclick="location.href='./portal.html'">Continue</button>
+            </div>
+          </div>
+        </main>
+
+        <!-- ===== FOOTER ===== -->
+        <footer class="footer"></footer>
+
+        <div class="live-search-query"></div>
+      </div>
+    </div>
+
+    <script src="../js/app.js" type="module"></script>
+    <script src="../js/components/header.js"></script>
+    <script src="../js/components/footer.js"></script>
+    <script src="../js/components/live-query-search.js"></script>
+  </body>
+</html>

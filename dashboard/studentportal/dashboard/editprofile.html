@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Portal</title>
+
+    <!-- ===== LINKING STYLESHEET ===== -->
+    <link rel="stylesheet" href="../src/css/main.css" />
+
+    <!-- MATERIAL ICONS -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!-- ===== SIDEBAR COMPONENT =====  -->
+      <div class="side-container">
+        <ul class="nav" id="sideNav"></ul>
+      </div>
+
+      <div class="container">
+        <!-- ===== HEADER COMPONENT ===== -->
+        <header></header>
+
+        <!-- ===== MAIN COMPONENT ===== -->
+        <main id="editProfile">
+          <div class="main-inner">
+            <div class="user-top-setting">
+              <div class="student__image">
+                <div class="studentAvatar"></div>
+              </div>
+              <div class="user__student">
+                <p id="studentName">Paul Ishaili C.</p>
+                <div class="user__status">
+                  <span class="user__status--color"></span>
+                  <span class="user__status--name">Admitted</span>
+                </div>
+                <div class="user__institution">
+                  University of Nigeria, Nsukka
+                </div>
+              </div>
+              <div class="user__student">
+                <div class="user__department">
+                  <i class="material-icons">badge</i>
+                  <span id="studentCourse"></span> Computer Science
+                </div>
+                <div class="user__entry-year">
+                  <span> year of entry:</span><span>2015</span>
+                </div>
+                <div class="user__level">
+                  <span>Level of Study</span><span>100Level</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="form-wrapper">
+                        <form action="" class="form">
+                            <div class="input-group">
+                                <label for=""></label>
+                                <input type="text" name="" id="" value="Paul Ishaili C.">
+                            </div>
+                        </form>
+                    </div> -->
+
+            <div class="user-actions">
+              <button>Save changes</button>
+              <button>Edit advanced settings</button>
+            </div>
+          </div>
+        </main>
+
+        <!-- ===== LIVE QUERY SEARCH COMPONENT -->
+        <div class="live-search-query"></div>
+      </div>
+    </div>
+
+    <script src="../js/app.js" type="module"></script>
+    <script src="../js/components/live-query-search.js"></script>
+    <script src="../js/components/header.js"></script>
+  </body>
+</html>

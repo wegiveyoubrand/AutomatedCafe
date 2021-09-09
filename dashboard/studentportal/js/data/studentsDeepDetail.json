@@ -1,0 +1,108 @@
+[
+    {
+        "name": {
+            "first": "Paul",
+            "last": "Ishaili",
+            "middle": "Chukwudi"
+        },
+        "JAMBRegNumber": "56479358JB",
+        "matricNumber": "2014/198405",
+        "origin": {
+            "country": "Nigeria",
+            "state": "Ebonyi",
+            "LGA": "Ezzanbo",
+            "Hometown": "Ohaukwu"
+        },
+        "education": {
+            "history": {
+                "primary": {
+                    "name": "",
+                    "contact": "",
+                    "startYear": "",
+                    "EndYear": "",
+                    "gotCertificate": true,
+                    "certificate": {
+                        "type": "First School Leaving Certiicate",
+                        "acronym": "FSLC",
+                        "year": "2008"
+                    }
+                },
+                "J_secondary": {
+                    "name": "",
+                    "contact": "",
+                    "startYear": "",
+                    "EndYear": "",
+                    "gotCertificate": true,
+                    "certificate": {
+                        "type": "Junior Secondary Certificate Examination",
+                        "acronym": "JSCE",
+                        "year": "2011"
+                    }
+                },
+                "S_secondary": {
+                    "name": "",
+                    "contact": "",
+                    "startYear": "",
+                    "EndYear": "",
+                    "gotCertificate": true,
+                    "certificate": {
+                        "type": "Senior Secondary Certificate Examination",
+                        "acronym": "SSCE",
+                        "year": "2014"
+                    }
+                }
+            },
+            "current": {
+                "University": {
+                    "name": "University of Nigeria",
+                    "contact": {
+                        "address": {
+                            "street": "Nsukka",
+                            "town": "",
+                            "state": "Enugu",
+                            "country": "Nigeria"
+                        },
+                        "phone": "",
+                        "email": "",
+                        "website": "",
+                        "social media": {
+                            "facebook": "",
+                            "twitter": "",
+                            "whatsapp": ""
+                        }
+                    }
+                }
+            }
+        },
+        "course": {
+            "name": "Computer Science",
+            "duration": 4,
+            "department": "Computer Science",
+            "faculty": "Physical Sciences"
+        },
+        "contact": {
+            "address": {
+                "street": "Nsukka",
+                "town": "",
+                "state": "Enugu",
+                "country": "Nigeria"
+            },
+            "phone": "",
+            "email": "",
+            "website": "",
+            "socialMedia": {
+                "facebook": "",
+                "twitter": "",
+                "whatsapp": ""
+            }
+        },
+        "bank": {
+            "name": "Fidelity Bank",
+            "sortCode": "",
+            "account": {
+                "name": "Paul Ishaili C.",
+                "NUBAN": "623541280"
+            }
+        }
+    }
+]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <!-- ===== LINKING STYLESHEET ===== -->
+    <link rel="stylesheet" href="../src/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- ===== SIDEBAR COMPONENT =====  -->
+        <div class="side-container">
+            <ul class="nav" id="sideNav"></ul>
+        </div>
+
+        <div class="container">
+
+            <!-- ===== HEADER COMPONENT ===== -->
+            <header></header>
+
+            <!-- ===== MAIN COMPONENT ===== -->
+            <main id="externalServices">
+                <div class="main-inner">
+                    <div class="cards">
+                        <div class="card">
+                            JAMB
+                        </div>
+
+                        <div class="card">
+                            WAEC
+                        </div>
+                        <div class="card">
+                            NECO
+                        </div>
+                        <div class="card">
+                            NYSC
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ===== LIVE QUERY SEARCH COMPONENT -->
+            <div class="live-search-query"></div>
+
+        </div>
+    </div>
+
+    <script src="../js/app.js" type="module"></script>
+    <script src="../js/components/live-query-search.js"></script>
+    <script src="../js/components/header.js"></script>
+</body>
+
+</html>

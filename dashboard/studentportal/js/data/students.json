@@ -1,0 +1,32 @@
+[
+  {
+    "name": {
+      "first": "Paul",
+      "last": "Ishaili",
+      "middle": "Chukwudi"
+    },
+    "JAMBRegNumber": "56479358JB",
+    "matricNumber": "2014/198405",
+    "course": "Computer Science"
+  },
+  {
+    "name": {
+      "first": "Esther",
+      "last": "Mbah",
+      "middle": "Chimagbanwe"
+    },
+    "JAMBRegNumber": "66479358JB",
+    "matricNumber": "2016/233803",
+    "course": "Animal Science"
+  },
+  {
+    "name": {
+      "first": "Emmanuel",
+      "last": "Ishaili",
+      "middle": "Anate"
+    },
+    "JAMBRegNumber": "06479358JB",
+    "matricNumber": "2017/233803",
+    "course": "Banking and Finance"
+  }
+]

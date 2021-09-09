@@ -1,0 +1,62 @@
+[
+  {
+    "Physical Science": {
+      "department": {
+        "Computer Science": [""],
+        "Statistics": [],
+        "Mathematics": []
+      },
+      "duration": "4"
+    },
+
+    "Social Sciences": [
+      "Computer Science",
+      "Combined Physical Science",
+      "Computer Ma"
+    ],
+
+    "Education": [
+      "Computer Science",
+      "Combined Physical Science",
+      "Computer Ma"
+    ],
+
+    "Art": [
+      "Computer Science",
+      "Combined Physical Science",
+      "Computer Ma",
+      "",
+      ""
+    ],
+
+    "Pharmaceutical Science": [
+      "Computer Science",
+      "Combined Physical Science",
+      "Computer Ma"
+    ],
+
+    "Business Administration": {
+      "department": {
+        "Computer Science": [""],
+        "Statistics": [],
+        "Mathematics": []
+      },
+      "duration": "4"
+    },
+
+    "Agriculture": {
+      "department": {
+        "Animal Science": [""],
+        "Crop Science": [],
+        "Soil Science": []
+      },
+      "duration": "4"
+    },
+
+    "Dentistry": {},
+
+    "Medical Sciences": {},
+
+    "Law": {}
+  }
+]

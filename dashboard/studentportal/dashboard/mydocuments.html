@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal</title>
+
+    <!-- ===== LINKING STYLESHEET ===== -->
+    <link rel="stylesheet" href="../src/css/main.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <!-- ===== SIDEBAR COMPONENT =====  -->
+        <div class="side-container">
+            <ul class="nav" id="sideNav"></ul>
+        </div>
+
+        <div class="container">
+
+            <!-- ===== HEADER COMPONENT ===== -->
+            <header></header>
+
+            <!-- ===== SEARCHBAR COMPONENT ===== -->
+            <!-- <div class="search-bar">
+                <div class="input-container">
+                    <input type="search" name="" id="">
+                    <button type="submit">Search</button>
+                </div>
+                <select name="" id="">
+                    <option value="">Sort by</option>
+                </select>
+            </div> -->
+
+            <!-- ===== MAIN COMPONENT ===== -->
+            <main id="myDocuments">
+                <div class="set-1">
+                    <h3>Lecture Notes</h3>
+                    <select name="" id="">
+                        <option value="">2019 - 2020</option>
+                    </select>
+                </div>
+                <div class="">
+                    <select name="" id="">
+                        <option value="">First Semester</option>
+                        <option value="">Second Semester</option>
+                        <option value="">All Semesters</option>
+                    </select>
+                </div>
+                <div class="main-inner">
+
+                    <div class="cards">
+                        <div class="course course-card card" onclick="location.href='./inc/lecturenotes.html'">
+                            <div class="course-name">GSP 101</div>
+                            <hr>
+                            <div class="course-lecturers">
+                                <p>Lecturer: <span>Dr. Ifeanyi Uguagbo</span></p>
+                            </div>
+                            <div class="course-unit">
+                                <p>Unit: <span>3</span></p>
+                            </div>
+                        </div>
+                        <div class="course course-card card">
+                            <div class="course-name">POL 101</div>
+                            <hr>
+                            <div class="course-lecturers">
+                                <p>Lecturer: <span>Dr. Ifeanyi Uguagbo</span></p>
+                            </div>
+                            <div class="course-unit">
+                                <p>Unit: <span>3</span></p>
+                            </div>
+                        </div>
+                        <div class="course course-card card">
+                            <div class="course-name">CEDR 101</div>
+                            <hr>
+                            <div class="course-lecturers">
+                                <p>Lecturer: <span>Dr. Ifeanyi Uguagbo</span></p>
+                            </div>
+                            <div class="course-unit">
+                                <p>Unit: <span>3</span></p>
+                            </div>
+                        </div>
+                        <div class="course course-card card">
+                            <div class="course-name">MEC 101</div>
+                            <hr>
+                            <div class="course-lecturers">
+                                <p>Lecturer: <span>Dr. Ifeanyi Uguagbo</span></p>
+                            </div>
+                            <div class="course-unit">
+                                <p>Unit: <span>3</span></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </main>
+
+            <!-- ===== FOOTER COMPONENT ===== -->
+
+            <!-- ===== LIVE-QUERY-SEARCH COMPONENT ===== -->
+            <div class="live-search-query"></div>
+
+        </div>
+    </div>
+
+    <script src="../js/app.js" type="module"></script>
+    <script src="../js/components/live-query-search.js"></script>
+    <script src="../js/components/header.js"></script>
+</body>
+
+</html>
