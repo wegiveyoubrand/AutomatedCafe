@@ -10,9 +10,7 @@ footerContainer.innerHTML = `
         Chat
     </div>
     <div class="chat">
-    <i class="material-icons">
-    schedule
-    </i>
+        <i class="material-icons">schedule</i>
         Time table
     </div>
     `;

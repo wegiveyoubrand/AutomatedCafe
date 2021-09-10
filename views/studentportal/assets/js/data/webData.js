@@ -18,17 +18,17 @@ const portalNavigations = [
   },
   {
     _id: 2,
-    name: "My Profile",
+    name: "Create New",
     link: `${baseURI}/portal.html`,
   },
   {
     _id: 3,
-    name: "Web Payment",
+    name: "Compulsory Books & Materials",
     link: `${baseURI}/webPayments.html`,
   },
   {
     _id: 4,
-    name: "File Upload Center",
+    name: "My Payments",
     link: `${baseURI}/marketplace.html`,
   },
   {
@@ -36,16 +36,15 @@ const portalNavigations = [
     name: "Marketplace",
     link: `${baseURI}/marketplace.html`,
   },
-  
   {
     _id: 6,
-    name: "Purchases",
+    name: "Generate Invoice",
     link: `${baseURI}/marketplace.html`,
   },
 
   {
     _id: 6,
-    name: "What's Trending",
+    name: "Course Registration",
     link: `${baseURI}/mydocuments.html`,
   },
 ];
