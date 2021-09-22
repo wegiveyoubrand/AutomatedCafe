@@ -1,8 +1,9 @@
 const headerContainer = document.querySelector("header");
+const BaseURL = "/views/studentportal/";
 
 headerContainer.innerHTML = `
     <div class="menu">
-        <img src="/assets/icons/bars.svg" alt="">
+        <img src="/assets/images/icons/bars.svg" alt="">
     </div>
     
     <div id="logo">
