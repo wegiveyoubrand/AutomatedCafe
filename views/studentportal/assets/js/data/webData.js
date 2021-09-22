@@ -12,40 +12,40 @@ const mainNavigations = [
 
 const portalNavigations = [
   {
-    _id: 1,
+    _id: 0,
     name: "",
     link: `${baseURI}/portal.html`,
   },
   {
-    _id: 2,
-    name: "Create New",
+    _id: 1,
+    name: "My Profile",
     link: `${baseURI}/portal.html`,
+  },
+
+  {
+    _id: 2,
+    name: "Book Library",
+    link: `${baseURI}/webPayments.html`,
   },
   {
     _id: 3,
-    name: "Compulsory Books & Materials",
+    name: "File System",
     link: `${baseURI}/webPayments.html`,
   },
   {
     _id: 4,
-    name: "My Payments",
+    name: "Web Payments",
     link: `${baseURI}/marketplace.html`,
   },
   {
     _id: 5,
+    name: "Create New",
+    link: `${baseURI}/portal.html`,
+  },
+  {
+    _id: 6,
     name: "Marketplace",
     link: `${baseURI}/marketplace.html`,
-  },
-  {
-    _id: 6,
-    name: "Generate Invoice",
-    link: `${baseURI}/marketplace.html`,
-  },
-
-  {
-    _id: 6,
-    name: "Course Registration",
-    link: `${baseURI}/mydocuments.html`,
   },
 ];
 

@@ -2,13 +2,17 @@ const headerContainer = document.querySelector("header");
 
 headerContainer.innerHTML = `
     <div class="menu">
-        <img src="../icons/bars.svg" alt="">
+        <img src="/assets/icons/bars.svg" alt="">
     </div>
     
-    <div id="logo"><a href="./index.html">Student Assistance Portal</a></div>
+    <div id="logo">
+        <a href="./index.html">
+            <img src="/assets/images/kkk.png" alt="" />
+                Student Portal</a>
+        </div>
 
     <div class="user__thumbnail">
-        <img src="/public/images/user_img.jpg" alt="">
+        <img src="/assets/images/user_img.jpg" alt="">
     </div>
 
     <div class="user__action">
