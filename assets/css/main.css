@@ -778,6 +778,7 @@ aside #closeAside {
   color: #000;
   -webkit-box-shadow: 0 0 5px rgba(0, 0, 139, 0.1);
           box-shadow: 0 0 5px rgba(0, 0, 139, 0.1);
+  border-radius: 0.5rem;
 }
 
 .cards .card small {
