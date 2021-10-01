@@ -9,7 +9,7 @@
     <meta property="og:title" content="Appheart e-Services" />
     <meta property="og:description" content="Get it done with confidence" />
     <meta property="og:image" content="/img/appheart_logo_square.png" />
-    <title>The Automated Cafe</title>
+    <title>Automated Cafe</title>
 
     <!-- GOOGLE ANALYTICS - Global site tag (gtag.js) -->
 
@@ -26,7 +26,7 @@
 
       gtag("config", "UA-208815638-1");
     </script>
-    
+
     <!-- FAVICON -->
 
     <link
@@ -36,7 +36,7 @@
     />
     <!-- CSS -->
 
-    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
 
     <!-- MATERIAL ICONS -->
 
@@ -98,7 +98,7 @@
   <body id="home">
     <!-- HEADER -->
 
-    <header>
+    <header class="header">
       <div class="brand toHome active" id="toHome">
         <div class="logo">
           <img src="./assets/images/kkk.png" alt="" />
@@ -108,53 +108,20 @@
         </div>
       </div>
 
-      <nav>
-        <ul>
-          <li><a href="#about">Contact us</a></li>
-          <li>
-            <a
-              href="https://apphearte-services.herokuapp.com/forum/"
-              target="_blank"
-              >Forum</a
-            >
+      <nav class="nav navbar">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#about">Technologies</a>
+          </li>
+          <li class="nav__item"><a href="#about">Solutions</a></li>
+          <li class="nav__item">
+            <a href="#platforms" class="button">Get Started</a>
           </li>
         </ul>
-
-        <div class="gotoDashoard">
-          <a href="#platforms" class="button">Get Started</a>
-        </div>
-
-        <div class="menu menuToggle">
-          <i class="material-icons">menu</i>
-        </div>
       </nav>
+
+      <div id="menu-btn"><i class="fa fa-bars"></i></div>
     </header>
-
-    <!-- ASIDE -->
-    <aside class="">
-      <div class="aside">
-        <div class="close-aside" id="closeAside">
-          <i class="material-icons">close</i>
-        </div>
-        <ul>
-          <li class="">
-            <a href="#about"><i class="material-icons">phone</i> Contact us</a>
-          </li>
-          <li>
-            <a href="https://apphearte-services.herokuapp.com/forum/"
-              ><i class="material-icons">news</i> Forum
-            </a>
-          </li>
-
-          <li class="get-started">
-            <a href="#platforms">
-              Get Started <i class="material-icons">login</i></a
-            >
-          </li>
-        </ul>
-      </div>
-      <div id="closeAside"></div>
-    </aside>
 
     <!-- MAIN -->
     <main class="container">
@@ -300,13 +267,18 @@
           >
         </div>
 
-        <div class="mapBox">
+        <div class="">
           <h2>Contact Us</h2>
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15845.587198554342!2d7.3732655!3d6.8429422!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa709d1f85c06f4fa!2sAutomated%20Cafe!5e0!3m2!1sen!2sng!4v1632555914066!5m2!1sen!2sng"
-            allowfullscreen=""
-            loading="lazy"
-          ></iframe>
+          <a href="wa.me/+2348105865474" class=""
+            ><i class="fa fa-phone-alt"></i>0810 586 5474</a
+          >
+          <a href="wa.me/+2348105865474" class=""
+            ><i class="fa fa-location-arrow"></i>Office 124, CEC Building,
+            Beside Nnamdi Azikwe's Library, UNN, Enugu State.</a
+          >
+          <a href="mailto:automatedcafe@gmail.com" class=""
+            ><i class="fa fa-envelope"></i>automatedcafe@gmail.com</a
+          >
         </div>
       </div>
       <div class="copyright">&copy;&nbsp;2021</div>
