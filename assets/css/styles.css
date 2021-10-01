@@ -146,7 +146,7 @@ video {
 header {
   -webkit-box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
           box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
-  background-color: #fff;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,7 +297,6 @@ header .brand > div > span header .brand:hover {
 .main {
   position: relative;
   top: 10rem;
-  margin-bottom: 15rem;
   min-height: 100vh;
 }
 
@@ -655,6 +654,7 @@ section {
 }
 
 section:nth-child(2) {
+  background-color: rgba(252, 234, 233, 0.5);
   padding: 0 5%;
   height: calc(100vh - 6rem);
   display: -webkit-box;
@@ -677,6 +677,11 @@ section:nth-child(2) .section-content {
 section:nth-child(3) {
   background-color: rgba(0, 0, 138, 0.1);
   height: calc(100vh - 6rem);
+}
+
+section:nth-child(4) {
+  background-color: #0d0db5;
+  color: white;
 }
 
 section.hero {
@@ -1173,14 +1178,33 @@ section .section-title {
             transform: scale(1);
     opacity: 1;
   }
-  .header a {
+  .header .nav {
+    padding: 1rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: auto;
+  }
+  .header .nav__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header .nav__item {
+    width: 100%;
+  }
+  .header .nav__item a {
+    width: 100%;
     font-size: 2rem;
-    display: block;
     padding: 1.5rem;
-    margin: 0.5rem 1rem;
+    margin: 0.5rem;
     border-radius: 0.5rem;
   }
-  .header a:hover {
+  .header .nav__item a:hover {
     background-color: #fceae9;
   }
 }
