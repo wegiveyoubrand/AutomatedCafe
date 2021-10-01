@@ -654,7 +654,7 @@ section {
 }
 
 section:nth-child(2) {
-  background-color: rgba(252, 234, 233, 0.5);
+  background-color: white;
   padding: 0 5%;
   height: calc(100vh - 6rem);
   display: -webkit-box;
@@ -675,13 +675,26 @@ section:nth-child(2) .section-content {
 }
 
 section:nth-child(3) {
-  background-color: rgba(0, 0, 138, 0.1);
+  background-color: #fceae9;
   height: calc(100vh - 6rem);
 }
 
-section:nth-child(4) {
+section:nth-child(5) {
   background-color: #0d0db5;
   color: white;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section:nth-child(5) .button {
+  background-color: white;
+  color: #555;
+  padding: initial 5rem;
 }
 
 section.hero {
