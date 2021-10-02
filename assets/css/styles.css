@@ -147,6 +147,8 @@ header {
   -webkit-box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
           box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
   background-color: white;
+  width: 100%;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -379,6 +381,7 @@ header .brand > div > span header .brand:hover {
   -webkit-box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
           box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
   padding: 2rem;
+  font-size: 1.75rem;
 }
 
 .card:hover {
@@ -668,15 +671,43 @@ section:nth-child(2) {
           justify-content: space-between;
 }
 
+section:nth-child(2) h1 {
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+section:nth-child(2) h1::after {
+  position: absolute;
+  content: "";
+  bottom: 2rem;
+  height: 2rem;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+  background-color: rgba(252, 234, 233, 0.4);
+}
+
 section:nth-child(2) .section-content {
   max-width: 920px;
   margin: 0 auto;
   text-align: center;
+  font-size: 1.75rem;
 }
 
 section:nth-child(3) {
   background-color: #fceae9;
   height: calc(100vh - 6rem);
+}
+
+section:nth-child(4) {
+  height: 40vh !important;
 }
 
 section:nth-child(5) {
