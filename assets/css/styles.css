@@ -390,6 +390,15 @@ header .brand > div > span header .brand:hover {
   cursor: pointer;
 }
 
+.card h3 {
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.5rem;
+}
+
 .service {
   position: relative;
   font-size: 2rem;
