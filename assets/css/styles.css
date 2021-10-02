@@ -702,15 +702,12 @@ section:nth-child(2) .section-content {
 }
 
 section:nth-child(3) {
-  background-color: #fceae9;
+  background-color: rgba(13, 13, 181, 0.05);
   height: calc(100vh - 6rem);
 }
 
-section:nth-child(4) {
-  height: 40vh !important;
-}
-
 section:nth-child(5) {
+  height: 40vh !important;
   background-color: #0d0db5;
   color: white;
   display: -ms-grid;
@@ -726,6 +723,30 @@ section:nth-child(5) .button {
   background-color: white;
   color: #555;
   padding: initial 5rem;
+}
+
+section:nth-child(6) {
+  margin-top: -3rem;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+section:nth-child(7) {
+  background-color: #0d0db5;
+  color: white;
+}
+
+section:nth-child(7) .card {
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: #0d0db5;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(85, 85, 85, 0.3);
+          box-shadow: 0 0.5rem 1.5rem rgba(85, 85, 85, 0.3);
 }
 
 section.hero {
