@@ -523,7 +523,7 @@ footer a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.45rem;
+  font-size: 1.36rem;
   margin-right: 1rem;
   margin-bottom: 1rem;
   -webkit-box-align: center;
@@ -1280,6 +1280,9 @@ section .section-title {
   }
   .header .nav__item a:hover {
     background-color: #fceae9;
+  }
+  footer a {
+    font-size: 1.45rem;
   }
 }
 
