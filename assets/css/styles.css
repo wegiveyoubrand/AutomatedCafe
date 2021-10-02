@@ -712,7 +712,7 @@ section:nth-child(2) .section-content {
 
 section:nth-child(3) {
   background-color: rgba(13, 13, 181, 0.05);
-  height: calc(100vh - 6rem);
+  height: auto;
 }
 
 section:nth-child(5) {
