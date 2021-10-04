@@ -50,6 +50,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 ul {
   list-style: none;
 }
@@ -710,11 +714,6 @@ section:nth-child(2) .section-content {
   font-size: 1.75rem;
 }
 
-section.solutions {
-  background-color: rgba(13, 13, 181, 0.05);
-  height: auto;
-}
-
 section#metricReviews {
   height: 40vh !important;
   background-color: #0d0db5;
@@ -814,6 +813,10 @@ section.hero h1 span p {
   font-weight: 500;
   line-height: 1.6;
   opacity: 0.85;
+}
+
+section.solutions {
+  background-color: rgba(13, 13, 181, 0.05);
 }
 
 section.solutions .card__title {
@@ -1342,6 +1345,47 @@ section .section-title {
   color: #fceae9;
 }
 
+.modal {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(85, 85, 85, 0.3);
+  margin: auto;
+  z-index: 1000;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  opacity: 0;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+}
+
+.modal__close {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  position: absolute;
+  right: 3rem;
+  top: 3rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+.modal.active {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  opacity: 1;
+}
+
 .get-wifi-access .message-template {
   color: #111155;
   background-color: #fceae9;
@@ -1623,8 +1667,7 @@ section .section-title {
 
 #JAMB section.solutions {
   background-color: white;
-  margin-top: 0;
-  left: 0;
+  height: 100%;
 }
 
 #JAMB section.getStarted {
