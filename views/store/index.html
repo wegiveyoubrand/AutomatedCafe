@@ -13,6 +13,12 @@
       rel="stylesheet"
     />
 
+    <!-- === FONTAWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
     <!-- === GOOGLE FONTS === -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -33,7 +39,7 @@
 
     <!-- ===== END OF EXTERNAL LINKS ===== -->
 
-    <title>JAMB Services | Automated Cafe</title>
+    <title>Affiliated Store | Automated Cafe</title>
   </head>
 
   <body id="JAMB">
@@ -54,14 +60,14 @@
       <nav class="nav navbar">
         <ul class="nav__list">
           <li class="nav__item"><a href="#solutions">About company</a></li>
-          <li class="nav__item">
+          <!-- <li class="nav__item">
             <a
               href="https://portal.jamb.gov.ng/efacility./"
               class="button"
               target="_blank"
               >Goto Portal</a
             >
-          </li>
+          </li> -->
         </ul>
       </nav>
 
@@ -77,21 +83,11 @@
 
       <section class="wrapper hero">
         <div class="">
-          <h1>JOINT ADMISSION MATRICULATION BOARD</h1>
-          <img
-            src="./assets/images/JAMB_Logo.jpg"
-            style="
-              height: 100px;
-              width: 100px;
-              opacity: 0.5;
-              border-radius: 1rem;
-              margin-bottom: 2rem;
-            "
-            alt=""
-          />
+          <h1>Automated Cafe Affiliated Store</h1>
+      
           <p>
-            To reliably measure candidates' abilities and determine their
-            sustainability for higher education
+            An integrable platform to buy all educational consumable products
+            you need with ease...
           </p>
         </div>
 
@@ -102,55 +98,49 @@
 
       <!-- ===== HERO ends =====  -->
 
+      <!-- ===== EVALUATING SECTION ===== -->
+
+      <div class="evaluating-section">
+        <div class="evaluations">
+          <div class="evaluation">
+            <i class="fa fa-lock"></i> Secured Payment
+          </div>
+          <div class="evaluation">
+            <i class="fa fa-refresh"></i>Easy Returns
+          </div>
+          <div class="evaluation">
+            <i class="fa fa-refresh"></i>24/7 Support
+          </div>
+        </div>
+      </div>
+
+      <!-- ===== EVALUATING SECTION ends ===== -->
+
       <!-- ===== SOLUTIONS ===== -->
 
       <section class="solutions" id="solutions">
         <div class="cards">
-          <div class="card modalTrigger JAMBServices" id="JAMBServices">
-            <div class="card__title"><h2>JAMB Registration</h2></div>
-            <div class="card__desc">Assists in the registration of JAMB</div>
-          </div>
+          <a href="./BookStore.html">
+            <div class="card modalTrigger JAMBServices" id="JAMBServices">
+              <div class="card__title"><h2>Books</h2></div>
+              <div class="card__desc">
+                Text books, Course materials, Filler Guides
+              </div>
+            </div></a
+          >
           <div class="card modalTrigger">
             <div class="card__title">
-              <h2>JAMB Acrredited CBT Centers</h2>
+              <h2>Technologies</h2>
             </div>
-            <div class="card__desc">
-              For building classlist / payroll System.
-            </div>
+            <div class="card__desc">Electronics</div>
           </div>
           <div class="card modalTrigger Remita">
-            <div class="card__title"><h2>Web payment</h2></div>
+            <div class="card__title"><h2>Electronics</h2></div>
             <div class="card__desc">Remita API, Bank Transfer, e-Tranzact</div>
           </div>
           <div class="card">
-            <div class="card__title"><h2>Time Manager</h2></div>
+            <div class="card__title"><h2>aRepairs</h2></div>
             <div class="card__desc">Create Time table, task scheduling</div>
-          </div>
-          <div class="card">
-            <div class="card__title"><h2>Scheduled email update</h2></div>
-            <div class="card__desc">
-              Implementing our quotebook API to get scheduled email cards and
-              updates
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__title"><h2>JAMB Courses Syllabus</h2></div>
-            <div class="card__desc">
-              Cyber cafe services readily available and nearest to you twith
-              regulated prices, Delivery service and quality assurance.
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card__title"><h2>Verity Matricalation Status</h2></div>
-            <div class="card__desc">
-              Merge Files into One PDF, Convert file(s) to PDF, Convert File(s)
-              from PDF
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__title"><h2>How to's Guideline</h2></div>
-            <div class="card__desc">This update is coming pretty soon.</div>
           </div>
         </div>
       </section>
@@ -275,7 +265,7 @@
     </footer>
     <!-- ===== FOOTER ends ===== -->
 
-    <script src="./src/js/main.js" type="module" defer></script>
+    <script src="../../assets/js/menu-btn.js" type="module" defer></script>
     <script src="../../assets/js/modal.js"></script>
   </body>
 </html>

@@ -381,6 +381,13 @@ header .brand > div > span header .brand:hover {
   }
 }
 
+@media (max-width: 450px) {
+  .cards {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 .card {
   -webkit-box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
           box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
@@ -715,7 +722,6 @@ section:nth-child(2) .section-content {
 }
 
 section#metricReviews {
-  height: 40vh !important;
   background-color: #0d0db5;
   color: white;
   display: -ms-grid;
@@ -911,6 +917,65 @@ section .section-title {
 .partners .partner:hover img {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+}
+
+.evaluations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #555;
+  color: #2ec52e;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.evaluations .evaluation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  padding: 1rem;
+  font-size: 1.35rem;
+  font-weight: bold;
+}
+
+.navigation-section {
+  padding: 2rem 9%;
+  -webkit-box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
+          box-shadow: 0 0.5rem 1.5rem rgba(13, 13, 181, 0.1);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .navigation-section {
+    padding: 2rem;
+  }
+}
+
+.book-selection {
+  padding: 2rem 9%;
+  padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .book-selection {
+    padding: 2rem;
+  }
+}
+
+.book-selection select {
+  width: 100%;
+  padding: 2rem 1.85rem;
+  font-size: 1.85rem;
+  font-weight: bold;
 }
 
 .slider {
