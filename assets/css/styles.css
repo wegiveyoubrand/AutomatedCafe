@@ -383,6 +383,7 @@ header .brand > div > span header .brand:hover {
 
 @media (max-width: 450px) {
   .cards {
+    padding: 2rem 20px;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
